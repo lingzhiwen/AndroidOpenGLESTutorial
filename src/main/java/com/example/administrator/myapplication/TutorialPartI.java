@@ -27,7 +27,7 @@ public class TutorialPartI extends OpenGLESActivity implements IOpenGLDemo {
 
     @Override
     public void initObject(GL10 gl) {
-        ball = new Ball(5, initTexture(gl, R.drawable.ic_launcher_round));
+        ball = new Ball(5, initTexture(gl, R.drawable.timg));
     }
 
     @Override

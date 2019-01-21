@@ -187,9 +187,9 @@ public class Ball {
         Matrix.multiplyMV(y_axis, 0, modelview, 0, y_axis, 0);
 
         gl.glRotatef(mAngleX, y_axis[0], y_axis[1], y_axis[2]);
-//        gl.glRotatef(mAngleY, x_axis[0], x_axis[1], x_axis[2]);
+        gl.glRotatef(mAngleY, x_axis[0], x_axis[1], x_axis[2]);
         gl.glRotatef(mAngleZ, 0, 0, 1);// 沿Z轴旋转
-//        gl.glPushMatrix();
+        gl.glPushMatrix();
         // 允许使用顶点数组
         gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
         // 为画笔指定顶点坐标数据
